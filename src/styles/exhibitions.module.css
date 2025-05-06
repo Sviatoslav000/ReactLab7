@@ -1,0 +1,401 @@
+.exhibition {
+  padding: 30px 100px;
+}
+
+.exhibition-section {
+  text-align: left;
+}
+
+.text-container {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 30px;
+  align-items: center;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.text-container h1 {
+  font-size: 1.5em;
+  color: #081C30;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.text-container h1 strong {
+  color: #204872;
+}
+
+.text-container p {
+  font-size: 1.2em;
+  color: #081C30;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.section-img {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease;
+  padding: 25px 0;
+}
+
+.exh-container {
+  display: flex;
+  width: 100%;
+  background-color: rgb(241, 239, 236);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  color: #081C30;
+}
+
+.exh-img {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exh-img a {
+  display: block;
+  width: 80%;
+}
+
+.exh-img-item {
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.exh-img-item:hover {
+  opacity: 0.6;
+}
+
+.exh-text {
+  flex: 2;
+  padding: 40px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.exh-text h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.exh-text h2 {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.exh-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.exh-link:hover {
+  color: #204872;
+}
+
+.pagination-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item button {
+  border: 1px solid #204872;
+  background-color: transparent;
+  color: #204872;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.page-item button:hover {
+  background-color: #204872;
+  color: #fff;
+}
+
+.page-item.active button {
+  background-color: #204872;
+  color: #fff;
+}
+
+/* Для екранів до 1524px (проміжний розмір між десктопом і iPad) */
+@media (max-width: 1524px) {
+  .exhibition {
+      padding: 30px 30px; /* Зменшено з 30px 100px */
+  }
+
+  .text-container {
+      gap: 40px; /* Зменшено з 50px */
+      padding-bottom: 25px; /* Зменшено з 30px */
+  }
+
+  .text-container h1 {
+      font-size: 1.4em; /* Зменшено з 1.5em */
+  }
+
+  .text-container p {
+      font-size: 1.15em; /* Зменшено з 1.2em */
+  }
+
+  .section-img {
+      padding: 20px 0; /* Зменшено з 25px 0 */
+  }
+
+  .exh-container {
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* Зменшено тінь */
+  }
+
+  .exh-img a {
+      width: 85%; /* Збільшено з 80% для адаптації */
+  }
+
+  .exh-text {
+      padding: 35px; /* Зменшено з 40px */
+  }
+
+  .exh-text h1 {
+      font-size: 1.4em; /* Зменшено з 1.5em */
+      margin-bottom: 8px; /* Зменшено з 10px */
+  }
+
+  .exh-text h2 {
+      font-size: 1.15em; /* Зменшено з 1.2em */
+  }
+
+  .pagination-container {
+      margin-top: 25px; /* Зменшено з 30px */
+  }
+
+  .page-item button {
+      padding: 7px 14px; /* Зменшено з 8px 16px */
+      font-size: 0.95em; /* Зменшено з 1em */
+  }
+}
+
+/* Для екранів від 1230px до 1028px */
+@media (max-width: 1230px) and (min-width: 1028px) {
+  .exhibition {
+      padding: 30px 30px; /* Зменшено з 25px 80px */
+  }
+
+  .text-container {
+      gap: 35px; /* Зменшено з 40px */
+      padding-bottom: 20px; /* Зменшено з 25px */
+  }
+
+  .text-container h1 {
+      font-size: 1.35em; /* Зменшено з 1.4em */
+  }
+
+  .text-container p {
+      font-size: 1.1em; /* Зменшено з 1.15em */
+  }
+
+  .section-img {
+      padding: 18px 0; /* Зменшено з 20px 0 */
+  }
+
+  .exh-img a {
+      width: 90%; /* Збільшено з 85% */
+  }
+
+  .exh-text {
+      padding: 30px; /* Зменшено з 35px */
+  }
+
+  .exh-text h1 {
+      font-size: 1.35em; /* Зменшено з 1.4em */
+      margin-bottom: 7px; /* Зменшено з 8px */
+  }
+
+  .exh-text h2 {
+      font-size: 1.1em; /* Зменшено з 1.15em */
+  }
+
+  .pagination-container {
+      margin-top: 22px; /* Зменшено з 25px */
+  }
+
+  .page-item button {
+      padding: 6px 12px; /* Зменшено з 7px 14px */
+      font-size: 0.9em; /* Зменшено з 0.95em */
+  }
+}
+
+/* Для екранів до 1024px (iPad) */
+@media (max-width: 1024px) {
+  .exhibition {
+      padding: 30px 30px; /* Зменшено з 20px 60px */
+  }
+
+  .text-container {
+      gap: 30px; /* Зменшено з 35px */
+      padding-bottom: 15px; /* Зменшено з 20px */
+  }
+
+  .text-container h1 {
+      font-size: 1.3em; /* Зменшено з 1.35em */
+  }
+
+  .text-container p {
+      font-size: 1.05em; /* Зменшено з 1.1em */
+  }
+
+  .section-img {
+      padding: 15px 0; /* Зменшено з 18px 0 */
+  }
+
+  .exh-container {
+      flex-direction: column; /* Змінено на колонку для кращої адаптації */
+  }
+
+  .exh-img {
+      flex: none; /* Скасовано flex: 1 */
+      width: 100%; /* Займає всю ширину */
+      padding: 20px 0; /* Додано відступи */
+  }
+
+  .exh-img a {
+      width: 70%; /* Зменшено з 90% для центрування */
+  }
+
+  .exh-text {
+      flex: none; /* Скасовано flex: 2 */
+      width: 100%; /* Займає всю ширину */
+      padding: 25px; /* Зменшено з 30px */
+  }
+
+  .exh-text h1 {
+      font-size: 1.3em; /* Зменшено з 1.35em */
+      margin-bottom: 6px; /* Зменшено з 7px */
+  }
+
+  .exh-text h2 {
+      font-size: 1.05em; /* Зменшено з 1.1em */
+  }
+
+  .pagination-container {
+      margin-top: 20px; /* Зменшено з 22px */
+  }
+
+  .page-item button {
+      padding: 5px 10px; /* Зменшено з 6px 12px */
+      font-size: 0.85em; /* Зменшено з 0.9em */
+  }
+}
+
+/* Для екранів до 768px (планшети) */
+@media (max-width: 768px) {
+  .exhibition {
+    padding: 20px 20px; /* Зменшено з 15px 40px */
+  }
+
+  .text-container {
+      gap: 20px; /* Зменшено з 30px */
+      padding-bottom: 10px; /* Зменшено з 15px */
+      flex-direction: column; /* Змінено на колонку */
+      align-items: flex-start; /* Вирівнювання зліва */
+  }
+
+  .text-container h1 {
+      font-size: 1.2em; /* Зменшено з 1.3em */
+  }
+
+  .text-container p {
+      font-size: 1em; /* Зменшено з 1.05em */
+  }
+
+  .section-img {
+      padding: 10px 0; /* Зменшено з 15px 0 */
+  }
+
+  .exh-img a {
+      width: 80%; /* Збільшено з 70% для кращої адаптації */
+  }
+
+  .exh-text {
+      padding: 20px; /* Зменшено з 25px */
+  }
+
+  .exh-text h1 {
+      font-size: 1.2em; /* Зменшено з 1.3em */
+      margin-bottom: 5px; /* Зменшено з 6px */
+  }
+
+  .exh-text h2 {
+      font-size: 1em; /* Зменшено з 1.05em */
+  }
+
+  .pagination-container {
+      margin-top: 15px; /* Зменшено з 20px */
+  }
+
+  .page-item button {
+      padding: 4px 8px; /* Зменшено з 5px 10px */
+      font-size: 0.8em; /* Зменшено з 0.85em */
+  }
+}
+
+/* Для екранів до 480px (мобільні) */
+@media (max-width: 480px) {
+  .exhibition {
+      padding: 20px 20px; /* Зменшено з 10px 20px */
+  }
+
+  .text-container {
+      gap: 15px; /* Зменшено з 20px */
+      padding-bottom: 5px; /* Зменшено з 10px */
+  }
+
+  .text-container h1 {
+      font-size: 1.1em; /* Зменшено з 1.2em */
+  }
+
+  .text-container p {
+      font-size: 0.9em; /* Зменшено з 1em */
+  }
+
+  .section-img {
+      padding: 5px 0; /* Зменшено з 10px 0 */
+  }
+
+  .exh-img {
+      padding: 15px 0; /* Зменшено з 20px 0 */
+  }
+
+  .exh-img a {
+      width: 90%; /* Збільшено з 80% */
+  }
+
+  .exh-text {
+      padding: 15px; /* Зменшено з 20px */
+  }
+
+  .exh-text h1 {
+      font-size: 1.1em; /* Зменшено з 1.2em */
+      margin-bottom: 4px; /* Зменшено з 5px */
+  }
+
+  .exh-text h2 {
+      font-size: 0.9em; /* Зменшено з 1em */
+  }
+
+  .pagination-container {
+      margin-top: 10px; /* Зменшено з 15px */
+  }
+
+  .page-item button {
+      padding: 3px 6px; /* Зменшено з 4px 8px */
+      font-size: 0.75em; /* Зменшено з 0.8em */
+  }
+}

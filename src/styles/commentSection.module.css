@@ -1,0 +1,388 @@
+.commentSection {
+  margin-top: 3rem;
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+}
+
+.commentSection h3 {
+  font-family: "Ysabeau SC", sans-serif;
+  color: #3b3a3d;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem; /* Базовий розмір */
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.commentList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.comment {
+  background: #F1EFEC;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.commentText {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem; /* Базовий розмір */
+  line-height: 1.5;
+  color: #3b3a3d;
+  text-align: left;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.commentMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem; /* Базовий розмір */
+  color: #666;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.author {
+  font-weight: 600;
+  color: #3b3a3d;
+}
+
+.date {
+  color: #999;
+}
+
+.commentInput {
+  width: 100%;
+  min-height: 100px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  font-family: "Alegreya Sans SC", sans-serif;
+  margin-bottom: 1rem;
+  resize: vertical;
+  color: #3b3a3d;
+  font-size: 1rem; /* Додано базовий розмір */
+}
+
+.commentInput:focus {
+  outline: none;
+  border-color: #3b3a3d;
+}
+
+.commentSubmit {
+  background: #3b3a3d;
+  font-size: 1.2rem; /* Базовий розмір */
+  color: white;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Alegreya Sans SC", sans-serif;
+  transition: background 0.3s ease;
+  margin-top: 13px;
+}
+
+.commentSubmit:hover {
+  background: #666;
+}
+
+/* Кнопка видалення коментаря */
+.commentDeleteBtn {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 12px; /* Базовий розмір */
+  cursor: pointer;
+  padding: 2px 6px;
+  margin-left: 10px;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.commentDeleteBtn:hover {
+  background-color: #ffebee;
+}
+
+.commentDeleteBtn::before {
+  content: "×";
+  font-size: 16px; /* Базовий розмір */
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+/* Для екранів до 1524px (проміжний розмір між десктопом і iPad) */
+@media (max-width: 1524px) {
+  .commentSection {
+    margin-top: 2.8rem; /* Зменшено з 3rem */
+    padding-top: 1.8rem; /* Зменшено з 2rem */
+  }
+
+  .commentSection h3 {
+    font-size: 1.25rem; /* Зменшено з 1.3rem */
+    margin-bottom: 1.4rem; /* Зменшено з 1.5rem */
+  }
+
+  .commentList {
+    max-height: 380px; /* Зменшено з 400px */
+    margin-bottom: 1.8rem; /* Зменшено з 2rem */
+  }
+
+  .comment {
+    padding: 0.9rem; /* Зменшено з 1rem */
+    margin-bottom: 0.9rem; /* Зменшено з 1rem */
+  }
+
+  .commentText {
+    font-size: 1.05rem; /* Зменшено з 1.1rem */
+    margin-bottom: 0.45rem; /* Зменшено з 0.5rem */
+  }
+
+  .commentMeta {
+    font-size: 0.85rem; /* Зменшено з 0.9rem */
+  }
+
+  .commentInput {
+    min-height: 90px; /* Зменшено з 100px */
+    padding: 0.9rem; /* Зменшено з 1rem */
+    margin-bottom: 0.9rem; /* Зменшено з 1rem */
+    font-size: 0.95rem; /* Зменшено з 1rem */
+  }
+
+  .commentSubmit {
+    font-size: 1.15rem; /* Зменшено з 1.2rem */
+    padding: 0.6rem 1.4rem; /* Зменшено з 0.65rem 1.5rem */
+    margin-top: 12px; /* Зменшено з 13px */
+  }
+
+  .commentDeleteBtn {
+    font-size: 11.5px; /* Зменшено з 12px */
+    padding: 1.5px 5px; /* Зменшено з 2px 6px */
+    margin-left: 9px; /* Зменшено з 10px */
+  }
+
+  .commentDeleteBtn::before {
+    font-size: 15px; /* Зменшено з 16px */
+  }
+}
+
+/* Для екранів від 1230px до 1028px */
+@media (max-width: 1230px) and (min-width: 1028px) {
+  .commentSection {
+    margin-top: 2.5rem; /* Зменшено з 2.8rem */
+    padding-top: 1.5rem; /* Зменшено з 1.8rem */
+  }
+
+  .commentSection h3 {
+    font-size: 1.2rem; /* Зменшено з 1.25rem */
+    margin-bottom: 1.3rem; /* Зменшено з 1.4rem */
+  }
+
+  .commentList {
+    max-height: 360px; /* Зменшено з 380px */
+    margin-bottom: 1.5rem; /* Зменшено з 1.8rem */
+  }
+
+  .comment {
+    padding: 0.8rem; /* Зменшено з 0.9rem */
+    margin-bottom: 0.8rem; /* Зменшено з 0.9rem */
+  }
+
+  .commentText {
+    font-size: 1rem; /* Зменшено з 1.05rem */
+    margin-bottom: 0.4rem; /* Зменшено з 0.45rem */
+  }
+
+  .commentMeta {
+    font-size: 0.8rem; /* Зменшено з 0.85rem */
+  }
+
+  .commentInput {
+    min-height: 80px; /* Зменшено з 90px */
+    padding: 0.8rem; /* Зменшено з 0.9rem */
+    margin-bottom: 0.8rem; /* Зменшено з 0.9rem */
+    font-size: 0.9rem; /* Зменшено з 0.95rem */
+  }
+
+  .commentSubmit {
+    font-size: 1.1rem; /* Зменшено з 1.15rem */
+    padding: 0.55rem 1.3rem; /* Зменшено з 0.6rem 1.4rem */
+    margin-top: 11px; /* Зменшено з 12px */
+  }
+
+  .commentDeleteBtn {
+    font-size: 11px; /* Зменшено з 11.5px */
+    padding: 1px 4px; /* Зменшено з 1.5px 5px */
+    margin-left: 8px; /* Зменшено з 9px */
+  }
+
+  .commentDeleteBtn::before {
+    font-size: 14px; /* Зменшено з 15px */
+  }
+}
+
+/* Для екранів до 1024px (iPad) */
+@media (max-width: 1024px) {
+  .commentSection {
+    margin-top: 2.2rem; /* Зменшено з 2.5rem */
+    padding-top: 1.2rem; /* Зменшено з 1.5rem */
+  }
+
+  .commentSection h3 {
+    font-size: 1.15rem; /* Зменшено з 1.2rem */
+    margin-bottom: 1.2rem; /* Зменшено з 1.3rem */
+  }
+
+  .commentList {
+    max-height: 340px; /* Зменшено з 360px */
+    margin-bottom: 1.2rem; /* Зменшено з 1.5rem */
+  }
+
+  .comment {
+    padding: 0.7rem; /* Зменшено з 0.8rem */
+    margin-bottom: 0.7rem; /* Зменшено з 0.8rem */
+  }
+
+  .commentText {
+    font-size: 0.95rem; /* Зменшено з 1rem */
+    margin-bottom: 0.35rem; /* Зменшено з 0.4rem */
+  }
+
+  .commentMeta {
+    font-size: 0.75rem; /* Зменшено з 0.8rem */
+  }
+
+  .commentInput {
+    min-height: 70px; /* Зменшено з 80px */
+    padding: 0.7rem; /* Зменшено з 0.8rem */
+    margin-bottom: 0.7rem; /* Зменшено з 0.8rem */
+    font-size: 0.85rem; /* Зменшено з 0.9rem */
+  }
+
+  .commentSubmit {
+    font-size: 1.05rem; /* Зменшено з 1.1rem */
+    padding: 0.5rem 1.2rem; /* Зменшено з 0.55rem 1.3rem */
+    margin-top: 10px; /* Зменшено з 11px */
+  }
+
+  .commentDeleteBtn {
+    font-size: 10.5px; /* Зменшено з 11px */
+    padding: 1px 3px; /* Зменшено з 1px 4px */
+    margin-left: 7px; /* Зменшено з 8px */
+  }
+
+  .commentDeleteBtn::before {
+    font-size: 13px; /* Зменшено з 14px */
+  }
+}
+
+/* Для екранів до 768px (планшети) */
+@media (max-width: 768px) {
+  .commentSection {
+    margin-top: 2rem; /* Зменшено з 2.2rem */
+    padding-top: 1rem; /* Зменшено з 1.2rem */
+  }
+
+  .commentSection h3 {
+    font-size: 1.1rem; /* Зменшено з 1.15rem */
+    margin-bottom: 1.1rem; /* Зменшено з 1.2rem */
+  }
+
+  .commentList {
+    max-height: 320px; /* Зменшено з 340px */
+    margin-bottom: 1rem; /* Зменшено з 1.2rem */
+  }
+
+  .comment {
+    padding: 0.6rem; /* Зменшено з 0.7rem */
+    margin-bottom: 0.6rem; /* Зменшено з 0.7rem */
+  }
+
+  .commentText {
+    font-size: 0.9rem; /* Зменшено з 0.95rem */
+    margin-bottom: 0.3rem; /* Зменшено з 0.35rem */
+  }
+
+  .commentMeta {
+    font-size: 0.7rem; /* Зменшено з 0.75rem */
+  }
+
+  .commentInput {
+    min-height: 60px; /* Зменшено з 70px */
+    padding: 0.6rem; /* Зменшено з 0.7rem */
+    margin-bottom: 0.6rem; /* Зменшено з 0.7rem */
+    font-size: 0.8rem; /* Зменшено з 0.85rem */
+  }
+
+  .commentSubmit {
+    font-size: 1rem; /* Зменшено з 1.05rem */
+    padding: 0.45rem 1.1rem; /* Зменшено з 0.5rem 1.2rem */
+    margin-top: 9px; /* Зменшено з 10px */
+  }
+
+  .commentDeleteBtn {
+    font-size: 10px; /* Зменшено з 10.5px */
+    padding: 1px 2px; /* Зменшено з 1px 3px */
+    margin-left: 6px; /* Зменшено з 7px */
+  }
+
+  .commentDeleteBtn::before {
+    font-size: 12px; /* Зменшено з 13px */
+  }
+}
+
+/* Для екранів до 480px (мобільні) */
+@media (max-width: 480px) {
+  .commentSection {
+    margin-top: 1.8rem; /* Зменшено з 2rem */
+    padding-top: 0.8rem; /* Зменшено з 1rem */
+  }
+
+  .commentSection h3 {
+    font-size: 1.05rem; /* Зменшено з 1.1rem */
+    margin-bottom: 1rem; /* Зменшено з 1.1rem */
+  }
+
+  .commentList {
+    max-height: 300px; /* Зменшено з 320px */
+    margin-bottom: 0.8rem; /* Зменшено з 1rem */
+  }
+
+  .comment {
+    padding: 0.5rem; /* Зменшено з 0.6rem */
+    margin-bottom: 0.5rem; /* Зменшено з 0.6rem */
+  }
+
+  .commentText {
+    font-size: 0.85rem; /* Зменшено з 0.9rem */
+    margin-bottom: 0.25rem; /* Зменшено з 0.3rem */
+  }
+
+  .commentMeta {
+    font-size: 0.65rem; /* Зменшено з 0.7rem */
+  }
+
+  .commentInput {
+    min-height: 50px; /* Зменшено з 60px */
+    padding: 0.5rem; /* Зменшено з 0.6rem */
+    margin-bottom: 0.5rem; /* Зменшено з 0.6rem */
+    font-size: 0.75rem; /* Зменшено з 0.8rem */
+  }
+
+  .commentSubmit {
+    font-size: 0.95rem; /* Зменшено з 1rem */
+    padding: 0.4rem 1rem; /* Зменшено з 0.45rem 1.1rem */
+    margin-top: 8px; /* Зменшено з 9px */
+  }
+
+  .commentDeleteBtn {
+    font-size: 9.5px; /* Зменшено з 10px */
+    padding: 0.5px 2px; /* Зменшено з 1px 2px */
+    margin-left: 5px; /* Зменшено з 6px */
+  }
+
+  .commentDeleteBtn::before {
+    font-size: 11px; /* Зменшено з 12px */
+  }
+}

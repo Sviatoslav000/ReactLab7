@@ -1,0 +1,76 @@
+.likeButton {
+  background: none;
+  border: 1px solid #3b3a3d;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem; /* Базовий розмір */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.likeButton:hover {
+  background-color: rgba(32, 72, 114, 0.1);
+}
+
+.likeButton.liked {
+  background-color: #3b3a3d;
+  color: white;
+}
+
+.likeButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.likeButton.liked:hover {
+  background-color: #666;
+}
+
+/* Для екранів до 1524px (проміжний розмір між десктопом і iPad) */
+@media (max-width: 1524px) {
+  .likeButton {
+    font-size: 0.95rem; /* Зменшено з 1rem */
+    padding: 7px 14px; /* Зменшено з 8px 16px */
+    gap: 7px; /* Зменшено з 8px */
+  }
+}
+
+/* Для екранів від 1230px до 1028px */
+@media (max-width: 1230px) and (min-width: 1028px) {
+  .likeButton {
+    font-size: 0.9rem; /* Зменшено з 0.95rem */
+    padding: 6px 12px; /* Зменшено з 7px 14px */
+    gap: 6px; /* Зменшено з 7px */
+  }
+}
+
+/* Для екранів до 1024px (iPad) */
+@media (max-width: 1024px) {
+  .likeButton {
+    font-size: 0.85rem; /* Зменшено з 0.9rem */
+    padding: 5px 10px; /* Зменшено з 6px 12px */
+    gap: 5px; /* Зменшено з 6px */
+  }
+}
+
+/* Для екранів до 768px (планшети) */
+@media (max-width: 768px) {
+  .likeButton {
+    font-size: 0.8rem; /* Зменшено з 0.85rem */
+    padding: 4px 8px; /* Зменшено з 5px 10px */
+    gap: 4px; /* Зменшено з 5px */
+  }
+}
+
+/* Для екранів до 480px (мобільні) */
+@media (max-width: 480px) {
+  .likeButton {
+    font-size: 0.75rem; /* Зменшено з 0.8rem */
+    padding: 3px 6px; /* Зменшено з 4px 8px */
+    gap: 3px; /* Зменшено з 4px */
+  }
+}

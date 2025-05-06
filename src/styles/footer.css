@@ -1,0 +1,223 @@
+.footer {
+    background-color: #222222;
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.menu, .contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 8px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #cccccc;
+}
+
+.contacts p {
+    margin: 6px 0;
+    line-height: 1.3;
+}
+
+.contacts a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.contacts a:hover {
+    color: #cccccc;
+}
+
+.logo-content {
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.logo-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.logo-icons img {
+    width: 180px;
+    height: 48px;
+    object-fit: contain;
+    filter: brightness(1.1);
+    transition: transform 0.3s ease;
+}
+
+.logo-icons img:hover {
+    transform: scale(1.05);
+}
+
+.icons-left {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-top: auto;
+    font-size: 1.5rem;
+    gap: 20px;
+}
+
+.icons-left a {
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons-left a:hover {
+    color: #cccccc;
+    transform: scale(1.1);
+}
+
+.logo-icons p {
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+.container-footer {
+    background-color: #222222;
+    padding: 15px 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Large Tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .footer {
+        font-size: 1.1rem;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    .content {
+        gap: 40px;
+    }
+    .container-footer {
+        padding: 12px 30px;
+    }
+    .logo-icons img {
+        width: 160px;
+        height: 42px;
+    }
+    .icons-left {
+        font-size: 1.4rem;
+        gap: 18px;
+    }
+}
+
+/* Tablet (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .footer {
+        font-size: 1rem;
+        justify-content: flex-start;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu, .contacts {
+        gap: 6px;
+    }
+    .logo-content {
+        font-size: 0.9rem;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .logo-icons img {
+        width: 140px;
+        height: 36px;
+    }
+    .icons-left {
+        font-size: 1.3rem;
+        gap: 15px;
+        margin-left: auto;
+        margin-top: 0;
+    }
+    .container-footer {
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .footer {
+        font-size: 0.85rem;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two-column grid for menu and contacts */
+        gap: 15px;
+        width: 100%;
+    }
+    .menu, .contacts {
+        gap: 4px;
+        margin-bottom: 0;
+    }
+    .menu a, .contacts p {
+        margin-bottom: 4px;
+        line-height: 1.2;
+    }
+    .logo-content {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        gap: 8px;
+    }
+    .logo-icons {
+        gap: 8px;
+    }
+    .logo-icons img {
+        width: 100px;
+        height: 26px;
+    }
+    .logo-icons p {
+        font-size: 0.75rem;
+    }
+    .icons-left {
+        font-size: 1.1rem;
+        gap: 10px;
+        margin-left: 0;
+        margin-top: 8px;
+        justify-content: flex-start;
+    }
+    .container-footer {
+        padding: 8px 15px;
+    }
+}

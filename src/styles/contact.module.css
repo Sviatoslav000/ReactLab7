@@ -1,0 +1,149 @@
+.main {
+    background: radial-gradient(circle, #A8B7CF 12%, #D8DADC 23%, #123458 68%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 850px;
+  }
+  
+  .contact-container {
+    background: white;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 440px;
+    margin-top: 25px;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 18px;
+    margin-top: 15px;
+    color: #081C30;
+    font-family: "Ysabeau SC", sans-serif;
+  }
+  
+  .contact-text {
+    font-size: 1em;
+    margin-bottom: 18px;
+    color: #081C30;
+    font-family: "Ysabeau SC", sans-serif;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: "Ysabeau SC", sans-serif;
+  }
+  
+  .message {
+    height: 110px;
+    padding-top: 75px;
+  }
+  
+  .invalid {
+    border: 2px solid red;
+  }
+  
+  .send-bt {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-family: "Ysabeau SC", sans-serif;
+  }
+  
+  .send-bt:hover {
+    background: #1a252f;
+  }
+  /* Для екранів до 768px (планшети) */
+@media (max-width: 768px) {
+  .contact-container {
+    width: 360px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    margin-top: 12px;
+  }
+
+  .contact-container .contact-text {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .contact-container input {
+    padding: 8px;
+    margin: 8px 0;
+    font-size: 0.95rem;
+  }
+
+  .contact-container .message {
+    height: 90px;
+    padding-top: 60px;
+  }
+
+  .contact-container .send-bt {
+    padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Для екранів до 480px (мобільні) */
+@media (max-width: 480px) {
+  .contact-container {
+    width: 280px;
+    padding: 12px;
+    font-size: 14px;
+  }
+  main {
+    min-height: 550px;
+  }
+  .contact-container h2 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .contact-container .contact-text {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+
+  .contact-container input {
+    padding: 6px;
+    margin: 6px 0;
+    font-size: 0.8rem;
+  }
+
+  .contact-container .message {
+    height: 55px;
+    padding-top: 33px;
+  }
+
+  .contact-container .send-bt {
+    padding: 6px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+  }
+}

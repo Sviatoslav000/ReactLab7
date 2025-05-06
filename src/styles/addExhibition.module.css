@@ -1,0 +1,627 @@
+.addSection {
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-bottom: 80px;
+}
+
+.blockSaveContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.saveText h1 {
+  font-size: 1.5em;
+  color: #081C30;
+  font-family: "Ysabeau SC", sans-serif;
+  padding-top: 30px;
+}
+
+.save {
+  border-color: #081C30;
+  background-color: #081C30;
+  color: #F1EFEC;
+  font-size: 1.2em;
+  font-family: "Alegreya Sans SC", sans-serif;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save:hover {
+  background-color: #5288C0;
+  border-color: #5288C0;
+  color: #F1EFEC;
+  box-shadow: none;
+}
+
+.containerInfoAdd {
+  background: #F1EFEC;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.styledForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.styledForm label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+  font-family: "Ysabeau SC", sans-serif;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.styledForm input[type="text"],
+.styledForm input[type="file"],
+.styledForm textarea {
+  padding: 10px 14px;
+  border: 1px solid #F1EFEC;
+  font-size: 1em;
+  text-align: left;
+  font-family: "Alegreya Sans SC", sans-serif;
+  border-bottom: 1px solid #999;
+  background-color: white;
+}
+
+.styledForm input[type="date"] {
+  padding: 10px 14px;
+  font-size: 1em;
+  text-align: left;
+  font-family: "Alegreya Sans SC", sans-serif;
+  margin: 0;
+}
+
+.styledForm input:focus,
+.styledForm textarea:focus {
+  border-color: #999;
+  outline: none;
+}
+
+.styledForm textarea {
+  resize: vertical;
+}
+
+.required {
+  color: red;
+}
+
+.durationGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dateWrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.dateField {
+  display: flex;
+  align-items: baseline;
+  background-color: white;
+  border-bottom: 1px solid #999;
+  flex: 0 0 27%;
+  min-width: 280px;
+}
+
+.dateInput {
+  width: auto !important;
+  border: none;
+  background: transparent;
+  font-size: 1em;
+  outline: none;
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: #000;
+}
+
+.dateInput::-webkit-calendar-picker-indicator {
+  filter: invert(0.3);
+  cursor: pointer;
+}
+
+.dateLabel {
+  margin-left: 10px !important;
+  font-size: 0.95em !important;
+  color: #6c757d !important;
+}
+
+.imageUpload .imagePreviewContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.previewImage {
+  width: 340px;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fileInput {
+  width: auto !important;
+}
+
+.hint {
+  text-align: left;
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.error {
+  color: red;
+  font-family: "Ysabeau SC", sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Для екранів до 1524px (проміжний розмір між десктопом і iPad) */
+@media (max-width: 1524px) {
+  .addSection {
+      padding-left: 200px;
+      padding-right: 200px;
+      padding-bottom: 70px;
+  }
+
+  .blockSaveContainer {
+      margin-top: 28px;
+      margin-bottom: 28px;
+  }
+
+  .saveText h1 {
+      font-size: 1.4em;
+      padding-top: 28px;
+  }
+
+  .save {
+      font-size: 1.1em;
+      padding: 5px 11px;
+  }
+
+  .containerInfoAdd {
+      padding: 25px;
+  }
+
+  .styledForm {
+      gap: 18px;
+  }
+
+  .styledForm label {
+      font-size: 1.05em;
+      margin-bottom: 4px;
+  }
+
+  .styledForm input[type="text"],
+  .styledForm input[type="file"],
+  .styledForm textarea {
+      padding: 9px 13px;
+      font-size: 0.98em;
+  }
+
+  .styledForm input[type="date"] {
+      padding: 9px 13px;
+      font-size: 0.98em;
+  }
+
+  .durationGroup {
+      gap: 9px;
+  }
+
+  .dateWrapper {
+      gap: 25px;
+  }
+
+  .dateField {
+      flex: 0 0 30%;
+      min-width: 260px;
+  }
+
+  .dateLabel {
+      font-size: 0.9em !important;
+  }
+
+  .dateInput {
+      font-size: 0.9em;
+  }
+
+  .previewImage {
+      width: 320px;
+      padding: 4px;
+  }
+
+  .imageUpload .imagePreviewContainer {
+      gap: 18px;
+  }
+
+  .hint {
+      font-size: 11.5px;
+      margin-top: 4px;
+  }
+
+  .error {
+      font-size: 0.98em;
+      margin-bottom: 14px;
+  }
+}
+
+/* Для екранів від 1230px до 1028px (додатковий діапазон) */
+@media (max-width: 1230px) and (min-width: 1028px) {
+  .addSection {
+      padding-left: 100px; /* Зменшено з 200px */
+      padding-right: 100px;
+      padding-bottom: 68px; /* Зменшено з 70px */
+  }
+
+  .blockSaveContainer {
+      margin-top: 27px; /* Зменшено з 28px */
+      margin-bottom: 27px;
+  }
+
+  .saveText h1 {
+      font-size: 1.38em; /* Проміжне між 1.4em і 1.35em */
+      padding-top: 27px; /* Зменшено з 28px */
+  }
+
+  .save {
+      font-size: 1.08em; /* Проміжне між 1.1em і 1.05em */
+      padding: 5px 10px; /* Зменшено з 5px 11px */
+  }
+
+  .containerInfoAdd {
+      padding: 23px; /* Проміжне між 25px і 22px */
+  }
+
+  .styledForm {
+      gap: 17px; /* Проміжне між 18px і 16px */
+  }
+
+  .styledForm label {
+      font-size: 1.03em; /* Проміжне між 1.05em і 1em */
+      margin-bottom: 4px;
+  }
+
+  .styledForm input[type="text"],
+  .styledForm input[type="file"],
+  .styledForm textarea {
+      padding: 8px 12px; /* Зменшено з 9px 13px */
+      font-size: 0.96em; /* Проміжне між 0.98em і 0.95em */
+  }
+
+  .styledForm input[type="date"] {
+      padding: 8px 12px; /* Зменшено з 9px 13px */
+      font-size: 0.96em; /* Проміжне між 0.98em і 0.95em */
+  }
+
+  .durationGroup {
+      gap: 8px; /* Зменшено з 9px */
+  }
+
+  .dateWrapper {
+      gap: 23px; /* Проміжне між 25px і 22px */
+  }
+
+  .dateField {
+      flex: 0 0 32%; /* Проміжне між 30% і 35% */
+      min-width: 260px; /* Те саме, що в 1024px */
+  }
+
+  .dateLabel {
+      font-size: 0.85em !important; /* Проміжне між 0.93em і 0.8em */
+  }
+
+  .dateInput {
+      font-size: 0.85em; /* Проміжне між 0.98em і 0.7em */
+  }
+
+  .previewImage {
+      width: 310px; /* Проміжне між 320px і 300px */
+      padding: 4px;
+  }
+
+  .imageUpload .imagePreviewContainer {
+      gap: 17px; /* Проміжне між 18px і 16px */
+  }
+
+  .hint {
+      font-size: 11.2px; /* Проміжне між 11.5px і 11px */
+      margin-top: 4px;
+  }
+
+  .error {
+      font-size: 0.96em; /* Проміжне між 0.98em і 0.95em */
+      margin-bottom: 13px; /* Те саме, що в 1024px */
+  }
+}
+
+/* Для екранів до 1024px (iPad) */
+@media (max-width: 1024px) {
+  .addSection {
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 65px;
+  }
+
+  .blockSaveContainer {
+      margin-top: 26px;
+      margin-bottom: 26px;
+  }
+
+  .saveText h1 {
+      font-size: 1.35em;
+      padding-top: 26px;
+  }
+
+  .save {
+      font-size: 1.05em;
+      padding: 5px 10px;
+  }
+
+  .containerInfoAdd {
+      padding: 22px;
+  }
+
+  .styledForm {
+      gap: 16px;
+  }
+
+  .styledForm label {
+      font-size: 1em;
+      margin-bottom: 4px;
+  }
+
+  .styledForm input[type="text"],
+  .styledForm input[type="file"],
+  .styledForm textarea {
+      padding: 8px 12px;
+      font-size: 0.95em;
+  }
+
+  .styledForm input[type="date"] {
+      padding: 8px 12px;
+      font-size: 0.95em;
+  }
+
+  .durationGroup {
+      gap: 8px;
+  }
+
+  .dateWrapper {
+      gap: 22px;
+  }
+
+  .dateField {
+      flex: 0 0 35%;
+      min-width: 260px;
+  }
+
+  .dateLabel {
+      font-size: 0.8em !important;
+  }
+
+  .dateInput {
+      font-size: 0.7em;
+  }
+
+  .previewImage {
+      width: 300px;
+      padding: 4px;
+  }
+
+  .imageUpload .imagePreviewContainer {
+      gap: 16px;
+  }
+
+  .hint {
+      font-size: 11px;
+      margin-top: 4px;
+  }
+
+  .error {
+      font-size: 0.95em;
+      margin-bottom: 13px;
+  }
+}
+
+/* Для екранів до 768px (планшети) */
+@media (max-width: 768px) {
+  .addSection {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 60px;
+  }
+
+  .blockSaveContainer {
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
+
+  .saveText h1 {
+      font-size: 1.3em;
+      padding-top: 25px;
+  }
+
+  .save {
+      font-size: 1em;
+      padding: 5px 10px;
+  }
+
+  .containerInfoAdd {
+      padding: 20px;
+  }
+
+  .styledForm {
+      gap: 15px;
+  }
+
+  .styledForm label {
+      font-size: 1em;
+      margin-bottom: 4px;
+  }
+
+  .styledForm input[type="text"],
+  .styledForm input[type="file"],
+  .styledForm textarea {
+      padding: 8px 12px;
+      font-size: 0.95em;
+  }
+
+  .styledForm input[type="date"] {
+      padding: 8px 12px;
+      font-size: 0.95em;
+  }
+
+  .durationGroup {
+      gap: 8px;
+  }
+
+  .dateWrapper {
+      gap: 20px;
+  }
+
+  .dateField {
+      flex: 0 0 40%;
+      min-width: 260px;
+  }
+
+  .dateLabel {
+      font-size: 0.75em !important;
+  }
+
+  .dateInput {
+      font-size: 0.6em;
+  }
+
+  .previewImage {
+      width: 280px;
+      padding: 4px;
+  }
+
+  .imageUpload .imagePreviewContainer {
+      gap: 15px;
+  }
+
+  .hint {
+      font-size: 11px;
+      margin-top: 4px;
+  }
+
+  .error {
+      font-size: 0.95em;
+      margin-bottom: 12px;
+  }
+}
+
+/* Для екранів до 480px (мобільні) */
+@media (max-width: 480px) {
+  .addSection {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+  }
+
+  .blockSaveContainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  .saveText h1 {
+      font-size: 1.1em;
+      padding-top: 20px;
+      text-align: center;
+  }
+
+  .save {
+      font-size: 0.9em;
+      padding: 4px 8px;
+  }
+
+  .containerInfoAdd {
+      padding: 15px;
+  }
+
+  .styledForm {
+      gap: 10px;
+  }
+
+  .styledForm label {
+      font-size: 0.9em;
+      margin-bottom: 3px;
+  }
+
+  .styledForm input[type="text"],
+  .styledForm input[type="file"],
+  .styledForm textarea {
+      padding: 6px 10px;
+      font-size: 0.85em;
+  }
+
+  .styledForm input[type="date"] {
+      padding: 6px 10px;
+      font-size: 0.85em;
+  }
+
+  .durationGroup {
+      gap: 6px;
+  }
+
+  .dateWrapper {
+      gap: 15px;
+      flex-direction: column;
+  }
+
+  .dateField {
+      flex: 0 0 100%;
+      min-width: 100%;
+  }
+
+  .dateLabel {
+      font-size: 0.85em !important;
+  }
+
+  .dateInput {
+      font-size: 0.85em;
+  }
+
+  .previewImage {
+      width: 200px;
+      padding: 3px;
+  }
+
+  .imageUpload .imagePreviewContainer {
+      gap: 10px;
+  }
+
+  .hint {
+      font-size: 10px;
+      margin-top: 3px;
+  }
+
+  .error {
+      font-size: 0.85em;
+      margin-bottom: 10px;
+  }
+}

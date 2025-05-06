@@ -1,0 +1,533 @@
+.header-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-height: 74px;
+}
+
+header {
+    background-color: #F1EFEC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-link,
+.login {
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #081C30;
+    font-size: 1.3em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #5288C0;
+}
+
+.nav {
+    gap: 18px;
+}
+
+.login,
+.register {
+    border-color: #081C30;
+}
+
+.register {
+    background-color: #081C30;
+    color: #F1EFEC;
+    font-size: 1.3em;
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.register:hover,
+.login:hover,
+.more-info:hover {
+    background-color: #5288C0;
+    border-color: #5288C0;
+    color: #F1EFEC;
+    box-shadow: none;
+}
+
+/* Додаткові стилі для авторизованого користувача */
+.user-profile {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile:hover {
+    opacity: 0.8;
+}
+
+.username {
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #081C30;
+    font-size: 1em;
+}
+
+.logout {
+    background-color: transparent;
+    border: 1px solid #081C30;
+    color: #081C30;
+    font-size: 1.3em;
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.logout:hover {
+    background-color: #5288C0;
+    border-color: #5288C0;
+    color: #F1EFEC;
+}
+
+.text-end {
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    margin-left: 20px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: #081C30;
+    font-size: 1em;
+}
+
+.fa-solid {
+    font-size: 1.4em;
+    color: #081C30;
+}
+
+.fa-solid:hover {
+    font-size: 1.4em;
+    color: #081C30;
+}
+
+.btn-outline-dark {
+    font-size: 1em;
+}
+
+/* Додаткові стилі для адаптації */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 74px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+/* Стилі для гамбургер-меню */
+.hamburger-menu {
+    display: none;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    position: relative;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #081C30 !important;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    display: none;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.d-flex {
+    gap: 8px; 
+}
+/* Медіа-запити */
+
+/* Large Tablet (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .logo-img {
+        height: 64px;
+    }
+
+    .nav-link,
+    .login,
+    .register,
+    .logout {
+        font-size: 1.1rem;
+        padding: 6px 12px;
+    }
+
+    .text-end {
+        gap: 8px;
+        margin-left: 15px;
+    }
+
+    .fa-solid {
+        font-size: 1.3em;
+    }
+
+    .btn-outline-dark {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .nav {
+        gap: 14px;
+    }
+
+    .user-profile {
+        gap: 6px;
+    }
+
+    .username {
+        font-size: 0.9em;
+    }
+}
+
+/* Tablet Adjustment (max-width: 1000px) */
+@media screen and (max-width: 1000px) {
+    .header-container {
+        padding-left: 0;
+    }
+
+    .logo-container {
+        margin-left: 0;
+    }
+
+    .logo-img {
+        height: 60px;
+    }
+
+    .nav-link,
+    .login,
+    .register,
+    .logout {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    .text-end {
+        gap: 6px;
+        margin-left: 10px;
+    }
+
+    .fa-solid {
+        font-size: 1.2em;
+    }
+
+    .btn-outline-dark {
+        font-size: 0.85em;
+        padding: 5px 10px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .user-profile {
+        gap: 5px;
+    }
+
+    .username {
+        font-size: 0.85em;
+    }
+}
+
+/* Tablet Narrow Adjustment (max-width: 846px) */
+@media screen and (max-width: 846px) {
+    .logo-img {
+        height: 58px;
+    }
+
+    .nav-link,
+    .login,
+    .register,
+    .logout {
+        font-size: 0.95rem;
+        padding: 4px 8px;
+    }
+
+    .text-end {
+        gap: 5px;
+        margin-left: 8px;
+    }
+
+    .fa-solid {
+        font-size: 1.1em;
+    }
+
+    .btn-outline-dark {
+        font-size: 0.8em;
+        padding: 4px 8px;
+    }
+
+    .nav {
+        gap: 8px;
+    }
+
+    .user-profile {
+        gap: 5px;
+    }
+
+    .username {
+        font-size: 0.8em;
+    }
+}
+
+/* Tablet (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .header-container {
+        padding-left: 0;
+    }
+
+    .logo-container {
+        margin-left: 0;
+    }
+
+    .logo-img {
+        height: 56px;
+    }
+
+    .hamburger-menu {
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .nav-container {
+        display: none;
+        position: absolute;
+        top: 74px;
+        right: 30px;
+        width: 180px;
+        background-color: rgba(241, 239, 236, 0.95);
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        padding: 12px;
+        border-radius: 6px;
+        -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .nav-container.active {
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .nav {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-container .nav-link,
+    .nav-container .login,
+    .nav-container .register,
+    .nav-container .logout {
+        font-size: 1rem;
+        padding: 5px 10px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .nav-container .nav-link:hover,
+    .nav-container .nav-link:focus,
+    .nav-container .nav-link:active {
+        color: #5288C0;
+    }
+
+    .nav-container .login:hover,
+    .nav-container .register:hover,
+    .nav-container .logout:hover,
+    .nav-container .login:active,
+    .nav-container .register:active,
+    .nav-container .logout:active {
+        background-color: #5288C0;
+        border-color: #5288C0;
+        color: #F1EFEC;
+    }
+
+    .text-end {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .text-end .btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+        margin-right: 0 !important;
+    }
+
+    .nav-container .user-profile {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+    }
+
+    .nav-container .username {
+        font-size: 1rem;
+    }
+
+    .fa-solid {
+        font-size: 1.2em;
+    }
+
+    .btn-outline-dark {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .header-container {
+        padding-left: 0;
+    }
+
+    .logo-container {
+        margin-left: 0;
+    }
+
+    .logo-img {
+        height: 46px;
+    }
+
+    .hamburger-menu {
+        width: 25px;
+        height: 18px;
+    }
+
+    .hamburger-menu span {
+        height: 2px;
+    }
+
+    .nav-container {
+        top: 74px;
+        right: 30px;
+        width: 160px;
+        padding: 10px;
+    }
+
+    .nav-container.active {
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .nav {
+        gap: 8px;
+    }
+
+    .nav-container .nav-link,
+    .nav-container .login,
+    .nav-container .register,
+    .nav-container .logout {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .nav-container .nav-link:hover,
+    .nav-container .nav-link:focus,
+    .nav-container .nav-link:active {
+        color: #5288C0;
+    }
+
+    .nav-container .login:hover,
+    .nav-container .register:hover,
+    .nav-container .logout:hover,
+    .nav-container .login:active,
+    .nav-container .register:active,
+    .nav-container .logout:active {
+        background-color: #5288C0;
+        border-color: #5288C0;
+        color: #F1EFEC;
+    }
+
+    .text-end {
+        gap: 10px;
+    }
+
+    .nav-container .user-profile {
+        gap: 5px;
+        padding-bottom: 5px;
+        margin-left: 12px;
+    }
+
+    .nav-container .username {
+        font-size: 0.85rem;
+    }
+
+    .fa-solid {
+        font-size: 1.1em;
+    }
+
+    .btn-outline-dark {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+}
+
+/* Сумісність зі старими версіями iOS */
+@supports (-webkit-overflow-scrolling: touch) and (max-width: 768px) {
+    .hamburger-menu {
+        display: -webkit-flex !important;
+        display: flex !important;
+    }
+
+    .hamburger-menu span {
+        display: block !important;
+        background-color: #081C30 !important;
+    }
+}

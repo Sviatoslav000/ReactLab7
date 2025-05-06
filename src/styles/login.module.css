@@ -1,0 +1,168 @@
+.main {
+  background: radial-gradient(circle, #A8B7CF 12%, #D8DADC 23%, #123458 68%);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 850px;
+}
+
+.loginContainer {
+  background: white;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 440px;
+  margin-top: 25px;
+}
+
+.heading {
+  font-size: 1.2em;
+  margin-bottom: 18px;
+  margin-top: 15px;
+  color: #081C30;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1em;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.checkbox {
+  width: auto;
+  margin-right: 5px;
+  color: #081C30;
+}
+
+.logBt {
+  background: #2c3e50;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1em;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.logBt:hover {
+  background: #1a252f;
+}
+
+.registerLink {
+  margin-top: 10px;
+  color: #081C30;
+  font-family: "Ysabeau SC", sans-serif;
+}
+
+.registerLink a {
+  color: #5288C0;
+  text-decoration: none;
+}
+
+/* Для екранів до 768px (планшети) */
+@media (max-width: 768px) {
+  .main {
+      min-height: 650px; /* Зменшено для планшетів */
+  }
+
+  .loginContainer {
+      width: 360px; /* Аналогічно до .contact-container */
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 15px;
+  }
+
+  .heading {
+      font-size: 1.1rem; /* Аналогічно до h2 */
+      margin-bottom: 15px;
+      margin-top: 12px;
+  }
+
+  .input {
+      padding: 8px; /* Аналогічно до input */
+      margin: 8px 0;
+      font-size: 0.95rem;
+  }
+
+  .checkboxContainer {
+      font-size: 0.95rem; /* Аналогічно до зменшення шрифтів */
+  }
+
+  .logBt {
+      padding: 8px; /* Аналогічно до .send-bt */
+      margin-top: 15px;
+      font-size: 0.95rem;
+  }
+
+  .registerLink {
+      margin-top: 8px;
+      font-size: 0.95rem;
+  }
+}
+
+/* Для екранів до 480px (мобільні) */
+@media (max-width: 480px) {
+  .main {
+      min-height: 550px; /* Аналогічно до .main на сторінці контактів */
+  }
+
+  .loginContainer {
+      width: 280px; /* Аналогічно до .contact-container */
+      padding: 12px;
+      margin-top: 12px;
+    margin-bottom: 10px;
+  }
+
+  .heading {
+      font-size: 1rem; /* Аналогічно до h2 */
+      margin-bottom: 8px;
+      margin-top: 8px;
+  }
+
+  .input {
+      padding: 6px; /* Аналогічно до input */
+      margin: 6px 0;
+      font-size: 0.8rem;
+  }
+
+  .checkboxContainer {
+      font-size: 0.8rem; /* Аналогічно до зменшення шрифтів */
+  }
+
+  .logBt {
+      padding: 6px; /* Аналогічно до .send-bt */
+      margin-top: 12px;
+      font-size: 0.8rem;
+  }
+.loginContainer h2 {
+  font-size: 1em;
+}
+  .registerLink {
+      margin-top: 6px;
+      font-size: 0.8rem;
+      margin-bottom: 12px;
+  }
+}
